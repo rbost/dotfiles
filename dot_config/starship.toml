@@ -15,7 +15,7 @@ style_user = "white"
 
 [hostname]
 ssh_only = false
-format = '[$ssh_symbol](bold blue)@[$hostname](bold white)\]:'
+format = '@[$hostname](bold white)\]:'
 trim_at = ''
 disabled = false
 
