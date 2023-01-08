@@ -56,6 +56,9 @@ antigen theme robbyrussell
 # Tell Antigen that you're done.
 antigen apply
 
+mkdir -p "$ZSH_CACHE_DIR/completions"
+
+
 # User configuration
 if [ -f "${HOME}/.local_zshrc" ];then
 source ${HOME}/.local_zshrc
