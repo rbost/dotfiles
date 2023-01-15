@@ -11,6 +11,7 @@ curl -sS https://starship.rs/install.sh | sh
 pacman -Syu git zsh starship
 {{   end }}
 
+chsh -s `which zsh`
 
 
 {{ else if eq .chezmoi.os "darwin" -}}
