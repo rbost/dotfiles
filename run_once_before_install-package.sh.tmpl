@@ -4,11 +4,11 @@
 {{   if (or (eq .chezmoi.osRelease.id "ubuntu") (eq .chezmoi.osRelease.id "debian")) }}
 # Ubuntu and Debian-specific code
 sudo apt update
-sudo apt install -y zsh
+sudo apt install -y zsh git
 curl -sS https://starship.rs/install.sh | sh
 {{   else if eq .chezmoi.osRelease.id "arch" }}
 # Arch-specific code
-pacman -Syu zsh starship
+pacman -Syu git zsh starship
 {{   end }}
 
 
