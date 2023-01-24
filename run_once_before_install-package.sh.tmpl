@@ -16,6 +16,7 @@ chsh -s `which zsh`
 
 {{ else if eq .chezmoi.os "darwin" -}}
 #!/bin/sh
+brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 brew install starship
 {{ end -}}
